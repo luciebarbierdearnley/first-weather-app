@@ -21,3 +21,5 @@ function showCity(event) {
 
 let search = document.querySelector("#search-form");
 search.addEventListener("submit", showCity);
+
+searchCity("Paris");
