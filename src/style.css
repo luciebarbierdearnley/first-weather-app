@@ -39,8 +39,13 @@ footer {
   border: 2px solid #007cb9;
   background-color: #007cb9;
   color: white;
+  transition: all 150ms ease-in-out;
 }
 
+.search:hover {
+  background-color: white;
+  color: #007cb9;
+}
 .app-content {
   width: 600px;
   background-color: white;

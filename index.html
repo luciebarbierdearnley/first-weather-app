@@ -14,19 +14,24 @@
   <body>
     <div class="app-content">
       <header>
-        <form>
+        <form id="search-form">
           <input
             class="city"
+            id="search-input"
             type="text"
             placeholder="Enter a city..."
             autofocus
             required />
-          <input class="search" type="submit" value="Search" />
+          <input
+            class="search"
+            id="search-button"
+            type="submit"
+            value="Search" />
         </form>
       </header>
       <hr />
       <main>
-        <h1>Paris</h1>
+        <h1 id="city">Paris</h1>
         <p>
           Friday 10:14, mist <br />
           Humidity: <b>92%</b>, Wind: <b>1.54km/h </b><br />
