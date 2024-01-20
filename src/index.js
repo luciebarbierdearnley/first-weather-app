@@ -18,11 +18,14 @@ function displayTemp(response) {
   let time = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
 
+  let weatherIcon = document.querySelector("#weather-icon");
+
   temperatureElement.innerHTML = Math.round(temperature);
   feelsLike.innerHTML = Math.round(feelsTemp);
   humidity.innerHTML = showHumidity;
   windSpeed.innerHTML = showWindSpeed;
   conditions.innerHTML = showConditions;
+  weatherIcon.innerHTML = `<img src="${response.data.condition.icon_url}" class="icon"/>`;
   time.innerHTML = formatDate(date);
 }
 
