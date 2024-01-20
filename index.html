@@ -21,7 +21,7 @@
             id="search-input"
             type="text"
             placeholder="Enter a city..."
-          
+            autofocus
             required />
           <input
             class="search"
@@ -34,9 +34,9 @@
       <main>
         <div>
           <h1 id="city"></h1>
-          <p class="description">
-            Friday 10:14, mist <br />
-            Humidity: <b>92%</b>, Wind: <b>1.54km/h </b>
+          <p class="feels-like">Feels like:<span id="feels-like-temp"> 3</span></p>
+           <p class="description"> <span id="time">Friday 10:14</span>, <span id="conditions">mist </span><br />
+            Humidity: <b id="humidity">92</b>%, Wind: <b id="windSpeed">1.54 </b> km/h
           </p>
         </div>
         <div>
