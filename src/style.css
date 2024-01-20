@@ -1,7 +1,9 @@
 body {
-  font-family: "Roboto", sans-serif;
-  background-color: #d5eeff;
+  font-family: "Assistant", sans-serif;
+
+  background-color: #f8fcea;
 }
+
 hr {
   border: #a9a9a9 0.5px dashed;
 }
@@ -12,32 +14,39 @@ main {
   margin-bottom: -50px;
 }
 h1 {
-  padding-top: 30px;
-  font-size: 36px;
+  padding-top: 20px;
+  font-size: 50px;
+  font-weight: 200;
+  text-align: center;
+  color: #005772;
 }
-b {
-  color: #007cb9;
-}
+
 footer {
   margin-top: 20px;
   text-align: center;
+  color: white;
 }
 
+.description {
+  padding-top: 120px;
+  text-align: center;
+  color: #005772;
+}
 .city {
   font-size: 18px;
   border-radius: 7px;
-  width: 500px;
+  width: 300px;
   padding: 5px;
-  border: 2px solid #007cb9;
-  background-color: #d5eeff;
+
+  background-color: #e8f8ea;
 }
 
 .search {
   border-radius: 7px;
   font-size: 15px;
   padding: 6px 10px;
-  border: 2px solid #007cb9;
-  background-color: #007cb9;
+
+  background-color: #005772;
   color: white;
   transition: all 150ms ease-in-out;
 }
@@ -47,23 +56,28 @@ footer {
   color: #007cb9;
 }
 .app-content {
-  width: 600px;
-  background-color: white;
+  width: 400px;
+
   display: block;
   margin: 0 auto;
   padding: 25px 30px;
   margin-top: 60px;
-  border: white solid 2px;
+
   border-radius: 20px;
   box-shadow: 10px 20px 20px 0px rgb(128, 128, 128, 0.4);
+  background-image: url(https://webartdevelopers.com/blog/wp-content/uploads/2018/10/CSS-SVG-Waves-Animation.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
 }
 .weather-temp {
   font-size: 70px;
   display: flex;
   position: relative;
   justify-content: end;
-  top: -170px;
-  left: -50px;
+  top: -245px;
+  left: -177px;
+  color: #005772;
 }
 
 .weather-icon {
@@ -71,8 +85,8 @@ footer {
   display: flex;
   position: relative;
   justify-content: end;
-  top: -110px;
-  left: -140px;
+  top: -170px;
+  left: -238px;
 }
 
 .weather-unit {
@@ -80,6 +94,7 @@ footer {
   display: flex;
   position: relative;
   justify-content: end;
-  top: -240px;
-  left: -5px;
+  top: -320px;
+  left: -140px;
+  color: #005772;
 }
