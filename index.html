@@ -3,61 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300&display=swap"
+      rel="stylesheet" />
     <link rel="stylesheet" href="src/style.css" />
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300&display=swap" rel="stylesheet">
-    
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <title>Meteo App</title>
   </head>
   <body>
-    </div>
-    <div class="app-content">
+    <div class="weather-app">
       <header>
-        <form id="search-form">
+        <form class="search-form" id="search-form">
           <input
-            class="city"
-            id="search-input"
-            type="text"
-            placeholder="Enter a city..."
-            autofocus
-            required />
-          <input
-            class="search"
-            id="search-button"
-            type="submit"
-            value="Search" />
+            type="search"
+            placeholder="Enter a city.."
+            required
+            id="search-form-input"
+            class="search-form-input" />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
-      <hr />
       <main>
-        <div>
-          <h1 id="city"></h1>
-          <p class="feels-like">Feels like:<span id="feels-like-temp"> 3</span></p>
-           <p class="description"> <span id="time">Friday 10:14</span>, <span id="conditions">mist </span><br />
-            Humidity: <b id="humidity">92</b>%, Wind: <b id="windSpeed">1.54 </b> km/h
-          </p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city" id="city"></h1>
+            <p class="weather-app-details">
+              <span id="time"></span>,
+              <span id="description"></span>
+              <br />
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind-speed"></strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div id="icon"></div>
+            <div class="weather-app-temperature" id="temperature"></div>
+            <div class="weather-app-unit">°C</div>
+          </div>
         </div>
-        <div>
-          <div id="weather-icon"></div>
-          <div id="local-temp" class="weather-temp"></div>
-          <div class="weather-unit">&deg;C</div>
-        </div>
+        <div class="weather-forecast" id="forecast"></div>
       </main>
-      <hr />
+
       <footer>
-        Coded by
+        This project was coded by
         <a href="https://github.com/luciebarbierdearnley" target="_blank">
           Lucie Barbier-Dearnley</a
-        >, is on
+        >, is
         <a
           href="https://github.com/luciebarbierdearnley/first-weather-app"
           target="_blank"
-          >GitHub</a
-        >, hosted on
-        <a href="https://first-weather-app-lbd.netlify.app" target="_blank">
-          Netlify</a
+          >open-sourced on GitHub</a
+        >
+        and
+        <a href="https://first-weather-app-lbd.netlify.app/" target="_blank"
+          >hosted on Netlify</a
         >
       </footer>
     </div>
