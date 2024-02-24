@@ -60,6 +60,10 @@ main {
 .weather-app-details strong {
   color: black;
 }
+
+#description {
+  text-transform: capitalize;
+}
 .weather-app-temperature-container {
   display: flex;
 }
